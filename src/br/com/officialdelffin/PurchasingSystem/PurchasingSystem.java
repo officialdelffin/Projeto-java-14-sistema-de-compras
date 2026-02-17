@@ -3,7 +3,9 @@
 package br.com.officialdelffin.PurchasingSystem;
 
 
+// Importações :
 import java.util.Scanner;
+
 
 // Classe responsável por criar sistema :
 public class PurchasingSystem {
