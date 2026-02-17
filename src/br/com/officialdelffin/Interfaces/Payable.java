@@ -7,7 +7,7 @@ package br.com.officialdelffin.Interfaces;
 public interface Payable {
 
 
-    int payment ();
+    int payment();
 
 
 }

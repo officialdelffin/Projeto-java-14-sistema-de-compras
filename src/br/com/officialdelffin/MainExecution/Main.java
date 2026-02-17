@@ -4,40 +4,12 @@ package br.com.officialdelffin.MainExecution;
 
 
 // Importações :
+
 import java.util.Scanner;
 
 
 // Classe principal :
 public class Main {
-
-
-    // Atributos :
-    private int accountBalance;
-    private int userChoice;
-
-
-    // Metodos Getters e Setters :
-
-    // Getters :
-
-    public int getAccountBalance() {
-
-
-        return accountBalance;
-
-
-    }
-
-
-    // Setters :
-
-    public void setAccountBalance(int accountBalance) {
-
-
-        this.accountBalance = accountBalance;
-
-
-    }
 
 
     // Metodos :
