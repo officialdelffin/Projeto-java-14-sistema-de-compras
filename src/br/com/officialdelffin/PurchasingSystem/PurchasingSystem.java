@@ -5,7 +5,6 @@ package br.com.officialdelffin.PurchasingSystem;
 
 // Importações :
 import br.com.officialdelffin.Products.Products;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -149,8 +148,18 @@ public class PurchasingSystem {
                 productsList.add(new Products(getNameProductList() , getValueProductList()));
 
 
-                // Exibindo compras realizadas :
+                // Exibindo titulo : compras realizadas :
                 System.out.println("Compras realizadas no sistema : \n");
+                
+                
+                // For i para exibir a lista de objetos : 
+                for (Products products : productsList) {
+
+
+                    System.out.println(products);
+
+                    
+                }
 
 
             }
