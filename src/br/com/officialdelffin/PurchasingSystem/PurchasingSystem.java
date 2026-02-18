@@ -4,7 +4,9 @@ package br.com.officialdelffin.PurchasingSystem;
 
 
 // Importações :
+
 import br.com.officialdelffin.Products.Products;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -21,7 +23,7 @@ public class PurchasingSystem {
 
 
     // Lists :
-    ArrayList <Products> productsList = new ArrayList<>();
+    ArrayList<Products> productsList = new ArrayList<>();
 
 
     // Metodos Getters e Setters :
@@ -123,7 +125,11 @@ public class PurchasingSystem {
 
 
         // Enquanto a escolha do usuário for 1 ele executa o loop :
-        while ( userChoice == 1 ) {
+        while (userChoice == 1) {
+
+
+            // Exibindo saldo da conta :
+            System.out.println("Saldo da conta : " + getValueProductList() + "\n");
 
 
             // Pedindo e armazenando name do produto :
@@ -145,37 +151,26 @@ public class PurchasingSystem {
 
 
                 // Armazenando o produto na lista de produtos e exibindo que a compra foi realizada:
-                productsList.add(new Products(getNameProductList() , getValueProductList()));
+                productsList.add(new Products(getNameProductList(), getValueProductList()));
                 System.out.println("Compra realizada com sucesso! " + "\n");
 
 
-                // Exibindo saldo da conta :
-                System.out.println("Saldo da conta : " + getValueProductList() + "\n");
+            }
 
 
-                // Exibindo titulo : compras realizadas :
-                System.out.println("Suas compras no sistema : \n");
-                
-                
-                // For i para exibir a lista de objetos : 
-                for (Products products : productsList) {
+            // Se o saldo da conta for menor do que o valor do produto :
+            else if (accountBalance < valueProductList) {
 
 
-                    System.out.println(products);
-
-                    
-                }
+                System.out.println("Saldo insuficiente para comprar produto" + "\n");
 
 
             }
 
-            else {
 
-
-
-
-
-            }
+            // Verificando se usuário que fazer mais comprar ou se quer sair do sistema :
+            System.out.println("Digite 1 para ficar e 2 para sair do sistema : " + "\n");
+            this.setUserChoice(inputUser.nextInt());
 
 
         }
