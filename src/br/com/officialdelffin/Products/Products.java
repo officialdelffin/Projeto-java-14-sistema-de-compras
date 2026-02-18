@@ -15,6 +15,8 @@ public class Products {
 
     // Métodos Getters e Setters :
 
+    // Getters :
+
     public String getName() {
 
 
@@ -22,6 +24,7 @@ public class Products {
 
 
     }
+
 
     public Double getValue() {
 
@@ -32,6 +35,8 @@ public class Products {
     }
 
 
+    // Setters :
+
     public void setName(String name) {
 
 
@@ -39,6 +44,7 @@ public class Products {
 
 
     }
+
 
     public void setValue(Double value) {
 
@@ -51,16 +57,14 @@ public class Products {
 
     // Construtores :
 
-    public Products (String name, Double value ) {
+    public Products(String name, Double value) {
 
 
-
+        this.setName(name);
+        this.setValue(value);
 
 
     }
-
-
-
 
 
 }

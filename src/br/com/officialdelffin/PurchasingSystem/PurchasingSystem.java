@@ -4,6 +4,9 @@ package br.com.officialdelffin.PurchasingSystem;
 
 
 // Importações :
+import br.com.officialdelffin.Products.Products;
+
+import java.util.ArrayList;
 import java.util.Scanner;
 
 
@@ -14,6 +17,12 @@ public class PurchasingSystem {
     // Atributos :
     private double accountBalance = 00.00;
     private int userChoice = 1;
+    private String nameProductList;
+    private double valueProductList;
+
+
+    // Lists :
+    ArrayList <Products> productsList = new ArrayList<>();
 
 
     // Metodos Getters e Setters :
@@ -29,12 +38,71 @@ public class PurchasingSystem {
     }
 
 
+    public int getUserChoice() {
+
+
+        return userChoice;
+
+
+    }
+
+
+    public String getNameProductList() {
+
+
+        return nameProductList;
+
+
+    }
+
+
+    public double getValueProductList() {
+
+
+        return valueProductList;
+
+
+    }
+
     // Setters :
 
     public void setAccountBalance(int accountBalance) {
 
 
         this.accountBalance = accountBalance;
+
+
+    }
+
+
+    public void setAccountBalance(double accountBalance) {
+
+
+        this.accountBalance = accountBalance;
+
+
+    }
+
+    public void setUserChoice(int userChoice) {
+
+
+        this.userChoice = userChoice;
+
+
+    }
+
+    public void setNameProductList(String nameProductList) {
+
+
+        this.nameProductList = nameProductList;
+
+
+    }
+
+    public void setValueProductList(double valueProductList) {
+
+
+        this.valueProductList = valueProductList;
 
 
     }
@@ -54,15 +122,22 @@ public class PurchasingSystem {
         System.out.println("Digite o saldo da sua conta : \n");
         accountBalance = inputUser.nextDouble();
 
+
+        // Enquanto a escolha do usuário for 1 ele executa o loop :
         while ( userChoice == 1 ) {
 
 
+            // Pedindo e armazenando name do produto :
+            System.out.println("Digite o nome do produto está comprando : \n");
+            setNameProductList(inputUser.nextLine());
 
+
+            // Pedindo e armazenando valor do produto :
+            System.out.println("Digite o valor do produto que está comprando");
+            setValueProductList(inputUser.nextDouble());
 
 
         }
-
-
 
 
     }
