@@ -16,7 +16,7 @@ public class PurchasingSystem {
 
 
     // Atributos :
-    private double accountBalance = 00.00;
+    private double accountBalance;
     private int userChoice = 1;
     private String nameProductList;
     private double valueProductList;
@@ -121,7 +121,8 @@ public class PurchasingSystem {
 
         // Pedindo e armazenando saldo da conta :
         System.out.println("Digite o saldo da sua conta : " + "\n");
-        accountBalance = inputUser.nextDouble();
+        this.setAccountBalance(inputUser.nextDouble());
+        inputUser.nextLine();
 
 
         // Enquanto a escolha do usuário for 1 ele executa o loop :
@@ -129,12 +130,13 @@ public class PurchasingSystem {
 
 
             // Exibindo saldo da conta :
-            System.out.println("Saldo da conta : " + getValueProductList() + "\n");
+            System.out.println("Saldo da conta : " + getAccountBalance() + "\n");
 
 
             // Pedindo e armazenando name do produto :
             System.out.println("Digite o nome do produto está comprando : " + "\n");
             setNameProductList(inputUser.nextLine());
+            inputUser.nextLine();
 
 
             // Pedindo e armazenando valor do produto :
