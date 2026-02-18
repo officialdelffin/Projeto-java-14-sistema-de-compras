@@ -137,6 +137,10 @@ public class PurchasingSystem {
             setValueProductList(inputUser.nextDouble());
 
 
+            // Armazenando o produto na lista de produtos :
+            productsList.add(new Products(getNameProductList() , getValueProductList()));
+
+
         }
 
 
