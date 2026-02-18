@@ -118,7 +118,7 @@ public class PurchasingSystem {
 
 
         // Pedindo e armazenando saldo da conta :
-        System.out.println("Digite o saldo da sua conta : \n");
+        System.out.println("Digite o saldo da sua conta : " + "\n");
         accountBalance = inputUser.nextDouble();
 
 
@@ -127,12 +127,12 @@ public class PurchasingSystem {
 
 
             // Pedindo e armazenando name do produto :
-            System.out.println("Digite o nome do produto está comprando : \n");
+            System.out.println("Digite o nome do produto está comprando : " + "\n");
             setNameProductList(inputUser.nextLine());
 
 
             // Pedindo e armazenando valor do produto :
-            System.out.println("Digite o valor do produto que está comprando");
+            System.out.println("Digite o valor do produto que está comprando " + "\n");
             setValueProductList(inputUser.nextDouble());
 
 
@@ -144,12 +144,17 @@ public class PurchasingSystem {
                 accountBalance = accountBalance - valueProductList;
 
 
-                // Armazenando o produto na lista de produtos :
+                // Armazenando o produto na lista de produtos e exibindo que a compra foi realizada:
                 productsList.add(new Products(getNameProductList() , getValueProductList()));
+                System.out.println("Compra realizada com sucesso! " + "\n");
+
+
+                // Exibindo saldo da conta :
+                System.out.println("Saldo da conta : " + getValueProductList() + "\n");
 
 
                 // Exibindo titulo : compras realizadas :
-                System.out.println("Compras realizadas no sistema : \n");
+                System.out.println("Suas compras no sistema : \n");
                 
                 
                 // For i para exibir a lista de objetos : 

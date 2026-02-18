@@ -75,7 +75,7 @@ public class Products {
 
 
 
-        return getName() + " - R$ " + getValue() ;
+        return getName() + " - R$ " + getValue() + "\n" ;
 
 
     }
