@@ -137,8 +137,31 @@ public class PurchasingSystem {
             setValueProductList(inputUser.nextDouble());
 
 
-            // Armazenando o produto na lista de produtos :
-            productsList.add(new Products(getNameProductList() , getValueProductList()));
+            // Se o saldo da conta for maior ou igual ao valor do produto :
+            if (accountBalance >= valueProductList) {
+
+
+                // Cobrando o valor do produto no saldo da conta :
+                accountBalance = accountBalance - valueProductList;
+
+
+                // Armazenando o produto na lista de produtos :
+                productsList.add(new Products(getNameProductList() , getValueProductList()));
+
+
+                // Exibindo compras realizadas :
+                System.out.println("Compras realizadas no sistema : \n");
+
+
+            }
+
+            else {
+
+
+
+
+
+            }
 
 
         }

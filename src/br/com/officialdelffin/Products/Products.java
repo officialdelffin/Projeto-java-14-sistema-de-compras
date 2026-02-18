@@ -67,4 +67,16 @@ public class Products {
     }
 
 
+    // Metodos :
+
+    // Override de to String :
+    @Override
+    public String toString() {
+
+
+
+        return getName() + " - R$ " + getValue() ;
+
+
+    }
 }
