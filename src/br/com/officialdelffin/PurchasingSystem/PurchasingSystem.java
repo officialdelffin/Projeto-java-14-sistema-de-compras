@@ -4,7 +4,9 @@ package br.com.officialdelffin.PurchasingSystem;
 
 
 // Importações :
+
 import br.com.officialdelffin.Products.Products;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -129,7 +131,7 @@ public class PurchasingSystem {
 
 
             // Exibindo saldo da conta :
-            System.out.println("Saldo da conta : " + getAccountBalance() + "\n");
+            System.out.println("\n" + "Saldo da conta : " + getAccountBalance() + "\n");
 
 
             // Pedindo e armazenando name do produto :
@@ -139,7 +141,7 @@ public class PurchasingSystem {
 
 
             // Pedindo e armazenando valor do produto :
-            System.out.println("Digite o valor do produto que está comprando " + "\n");
+            System.out.println("\n" + "Digite o valor do produto que está comprando " + "\n");
             setValueProductList(inputUser.nextDouble());
 
 
@@ -165,7 +167,7 @@ public class PurchasingSystem {
             else if (getAccountBalance() < getValueProductList()) {
 
 
-                System.out.println("Saldo insuficiente para comprar produto" + "\n");
+                System.out.println("\n" + "Saldo insuficiente para comprar produto" + "\n");
 
 
             }
@@ -180,17 +182,11 @@ public class PurchasingSystem {
 
 
         // Quando o usuário descidir encerrar o sistema :
-        if (getUserChoice() == 2 ) {
+        if (getUserChoice() == 2) {
 
 
             // Exibe que o encerramento foi um sucesso e recado de exibição da lista :
-            System.out.println("""
-                    
-                    O sistema foi encerrado com sucesso!
-                    
-                    Produtos comprados no sistema :
-                    
-                    """);
+            System.out.println(" O sistema foi encerrado com sucesso! " + "\n" + "Produtos comprados no sistema ");
 
 
             // Percorrendo a lista e armazenando em list para exibir :
@@ -220,8 +216,6 @@ public class PurchasingSystem {
 
 
         }
-
-
 
 
     }
