@@ -210,7 +210,13 @@ public class PurchasingSystem {
         else {
 
 
+            // Recado de erro :
+            System.out.println("O sistema não reconhece a sua resposta. Tente novamente : ");
 
+
+            // Verificando se usuário que fazer mais comprar ou se quer sair do sistema :
+            System.out.println("Digite 1 para ficar e 2 para sair do sistema : " + "\n");
+            this.setUserChoice(inputUser.nextInt());
 
 
         }
