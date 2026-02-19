@@ -183,7 +183,24 @@ public class PurchasingSystem {
         if (getUserChoice() == 2 ) {
 
 
+            // Exibe que o encerramento foi um sucesso e recado de exibição da lista :
+            System.out.println("""
+                    
+                    O sistema foi encerrado com sucesso!
+                    
+                    Produtos comprados no sistema :
+                    
+                    """);
 
+
+            // Percorrendo a lista e armazenando em list para exibir :
+            for (Products list : productsList) {
+
+
+                System.out.println(list);
+
+
+            }
 
 
         }
@@ -191,6 +208,7 @@ public class PurchasingSystem {
 
         // Se o usuário digitar qualquer coisa que não for 1 e 2 :
         else {
+
 
 
 
