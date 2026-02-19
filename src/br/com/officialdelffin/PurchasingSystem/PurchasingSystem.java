@@ -120,6 +120,7 @@ public class PurchasingSystem {
         // Pedindo e armazenando saldo da conta :
         System.out.println("Digite o saldo da sua conta : " + "\n");
         this.setAccountBalance(inputUser.nextDouble());
+        System.out.println(" ");
         inputUser.nextLine();
 
 
@@ -155,6 +156,7 @@ public class PurchasingSystem {
 
                 // Armazenando o produto na lista de produtos e exibindo que a compra foi realizada:
                 productsList.add(new Products(getNameProductList(), getValueProductList()));
+                System.out.println(" ");
                 System.out.println("Compra realizada com sucesso! " + "\n");
 
 
