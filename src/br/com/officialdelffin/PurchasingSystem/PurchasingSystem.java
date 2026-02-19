@@ -148,9 +148,7 @@ public class PurchasingSystem {
 
 
                 // Cobrando o valor do produto no saldo da conta :
-
                 double value = getAccountBalance() - getValueProductList();
-
                 setAccountBalance(value);
 
 
@@ -179,6 +177,27 @@ public class PurchasingSystem {
 
 
         }
+
+
+        // Quando o usuário descidir encerrar o sistema :
+        if (getUserChoice() == 2 ) {
+
+
+
+
+
+        }
+
+
+        // Se o usuário digitar qualquer coisa que não for 1 e 2 :
+        else {
+
+
+
+
+        }
+
+
 
 
     }
