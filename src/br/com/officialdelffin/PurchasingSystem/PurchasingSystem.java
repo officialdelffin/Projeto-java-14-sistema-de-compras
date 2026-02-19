@@ -145,11 +145,14 @@ public class PurchasingSystem {
 
 
             // Se o saldo da conta for maior ou igual ao valor do produto :
-            if (accountBalance >= valueProductList) {
+            if (getAccountBalance() >= getValueProductList()) {
 
 
                 // Cobrando o valor do produto no saldo da conta :
-                accountBalance = accountBalance - valueProductList;
+
+                double value = getAccountBalance() - getValueProductList();
+
+                setAccountBalance(value);
 
 
                 // Armazenando o produto na lista de produtos e exibindo que a compra foi realizada:
@@ -161,7 +164,7 @@ public class PurchasingSystem {
 
 
             // Se o saldo da conta for menor do que o valor do produto :
-            else if (accountBalance < valueProductList) {
+            else if (getAccountBalance() < getValueProductList()) {
 
 
                 System.out.println("Saldo insuficiente para comprar produto" + "\n");
